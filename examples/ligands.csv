@@ -1,0 +1,6 @@
+name,smiles,pubchem_cid,notes
+crizotinib,,11626560,1st-gen ALK/ROS1/MET inhibitor (reference)
+ceritinib,,57379345,2nd-gen ALK inhibitor
+alectinib,,49806720,2nd-gen ALK inhibitor
+brigatinib,,49806726,2nd-gen ALK inhibitor
+lorlatinib,,71723618,3rd-gen ALK inhibitor (macrocycle)

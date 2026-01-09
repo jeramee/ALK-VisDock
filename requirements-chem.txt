@@ -1,0 +1,18 @@
+# Optional chemistry stack
+#
+# This project can run without RDKit (it will fall back to PubChem properties/images),
+# but RDKit unlocks local 2D rendering + descriptor calc.
+#
+# Windows recommendation:
+#   conda install -c conda-forge rdkit
+# or use the provided environment.yml
+#
+# Pip note:
+# "rdkit-pypi" wheels are not available on all OS/Python combos. The marker below
+# avoids a hard failure on Windows and on newer Python versions.
+
+# RDKit: install via conda-forge using `environment.yml` (recommended).
+# Keeping RDKit out of pip requirements avoids "no matching distribution" errors on many setups.
+# If you're on Linux/macOS with Python <3.12 and want to try pip, uncomment the next line.
+# rdkit-pypi>=2022.9.5 ; (python_version < "3.12")
+Pillow>=10.0

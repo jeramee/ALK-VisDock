@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alk-visdock"
+version = "0.1.1"
+description = "ALK-VisDock: local visual gallery + optional docking hooks (research/visualization)."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "ALK-VisDock"}]
+license = {text = "MIT"}
+dependencies = [
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+# NOTE: RDKit and OpenBabel are typically installed via conda (conda-forge) on Windows.
+viz = [
+  "py3Dmol>=2.0.4",
+  "biopython>=1.81",
+  "matplotlib>=3.7",
+]
+
+[project.scripts]
+alk-visdock = "alk_visdock.__main__:main"
+
+[tool.setuptools]
+packages = ["alk_visdock"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+alk_visdock = [
+  "site_template/index.html",
+  "site_template/assets/*",
+]

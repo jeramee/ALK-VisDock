@@ -1,0 +1,17 @@
+name: alk-visdock
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - requests
+  - pydantic>=2
+  - uvicorn
+  - fastapi
+  - rdkit
+  - pillow
+  - openbabel
+  - numpy
+  - pandas
+  - pip:
+      - py3Dmol>=2.0.4
